@@ -10,13 +10,18 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class RpcRequest {
-    private String requestId; // Correlates request <--> response
+    // Unique ID for this request. Correlates request <--> response
+    private String requestId;
 
-    private String service; // eg "UserService"
+    // service name eg "UserService"
+    private String service;
 
-    private String method; // eg "getUserById"
+    // method name to call eg "getUserById"
+    private String method;
 
-    private String[] paramTypes; // eg ["String", "int"]
+    // data type of method arguments eg ["String", "int"]
+    private String[] paramTypes;
 
-    private Object[] args; // eg ["foo_bar", 1]
+    // method arguments eg ["foo_bar", 1]
+    private Object[] args;
 }

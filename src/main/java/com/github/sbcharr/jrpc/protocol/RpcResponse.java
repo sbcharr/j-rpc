@@ -11,11 +11,15 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class RpcResponse {
-    private String requestId; // Correlates to RpcRequest
+    // Correlates to RpcRequest
+    private String requestId;
 
-    private boolean success; // true if call succeeded, false if error occurred
+    // true if call succeeded, false if error occurred
+    private boolean success;
 
-    private Object result; // Result of the RPC call if success == true
+    // Result of the RPC call if success == true
+    private Object result;
 
-    private RpcError error; // Error details if success == false
+    // Error details if success == false
+    private RpcError error;
 }

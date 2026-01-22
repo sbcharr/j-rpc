@@ -1,4 +1,4 @@
-package com.github.sbcharr.jrpc.protocol;
+package com.github.sbcharr.jrpc.serialize;
 
 public interface SerializerType {
     byte JSON = 0;
