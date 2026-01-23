@@ -17,7 +17,7 @@ public class RpcClient {
         this.port = port;
     }
 
-    public Channel connect() {
+    public Channel connect() throws InterruptedException {
         EventLoopGroup group = new NioEventLoopGroup();
 
         Bootstrap bootstrap = new Bootstrap();
